@@ -4,46 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* background-color: #f0f0f0; */
+            overflow: hidden;
+        }
+
+        iframe{
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <div class="settings">
-        <button class="btn-settings"><a href="darkmode/index.html" target="_self" rel="noopener noreferrer">Dark Mode</a></button>
-        <button class="btn-settings"><a href="computer/index.html" target="_blank" rel="noopener noreferrer">Play vs Computer</a></button>
-    </div>
-    <div class="container">
-        <h1>Tic Tac Toe</h1>
-        <p id="player-turn"></p>
-        <div class="board">
-            <div class="cell" onclick="placeMarker(0)"></div>
-            <div class="cell" onclick="placeMarker(1)"></div>
-            <div class="cell" onclick="placeMarker(2)"></div>
-            <div class="cell" onclick="placeMarker(3)"></div>
-            <div class="cell" onclick="placeMarker(4)"></div>
-            <div class="cell" onclick="placeMarker(5)"></div>
-            <div class="cell" onclick="placeMarker(6)"></div>
-            <div class="cell" onclick="placeMarker(7)"></div>
-            <div class="cell" onclick="placeMarker(8)"></div>
-        </div>
-        <button onclick="resetBoard()">Reset</button>
-        <p id="message"></p>
-    </div>
-    <!-- Win modal -->
-    <div id="winModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeWinModal()">&times;</span>
-            <div class="win-content">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="122" viewBox="0,0,512,417.82556">
-                    <g transform="translate(-228,-219.50778)">
-                        <g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill="#ffbf00" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal">
-                            <path d="M740,304.832v225.83467c-0.07053,58.88113 -47.78553,106.59614 -106.66667,106.66667h-298.66667c-58.88113,-0.07053 -106.59614,-47.78553 -106.66667,-106.66667v-225.83467c0.00368,-17.25422 10.39904,-32.80785 26.34007,-39.41026c15.94103,-6.60241 34.28951,-2.95381 46.49193,9.24493l55.168,55.168l97.83467,-97.83467c16.66133,-16.6563 43.66934,-16.6563 60.33067,0l97.83467,97.83467l55.168,-55.168c12.1849,-12.24174 30.5624,-15.90038 46.50667,-9.25867c15.93987,6.60891 26.32968,22.16836 26.32533,39.424z"/>
-                        </g>
-                    </g>
-                </svg>
-                <p id="winMessage"><span id="winnerText">Congratulations!</span><br><span style="font-size: 2em;">Player <span id="winner"></span> won!</span></p>
-            </div>
-        </div>
-    </div>
-    <script src="../js/script.js"></script>
+    <iframe src="html/databases/validate.html" frameborder="0"  overflow="hidden"></iframe>
 </body>
 </html>
